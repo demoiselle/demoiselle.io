@@ -1,7 +1,7 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
-  "start_url": "index.html",
+  "name": "Todo Demoiselle",
+  "short_name": "todo",
+  "start_url": "/?utm_source=web_app_manifest",
   "display": "standalone",
   "icons": [{
     "src": "assets/imgs/logo.png",

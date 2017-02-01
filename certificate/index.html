@@ -48,7 +48,7 @@
 		</div>
 
 		<div class="jumbotron">
-			<h1>Demoiselle Certificate</h1>
+			<h1>Demoiselle <b>Certificate</b></h1>
 			<h2>Versão Candidata <b>1.2.0-RC1</b> Liberada!</h2>
 		</div>
 		<div class="marketing">
@@ -61,9 +61,24 @@
 				<div class="col-lg-12">
 					<div class="list-group">
 						<div class="list-group-item">
-							<b class="list-group-item-heading">Novo Mecanismo de Provedores de Autoridades Certificadoras</b>
-							<p class="list-group-item-text">Novos provedores de Autoridades Certificadoras que tentam montar a cadeia na seguinte ordem: Componente, Home do Usuário
-								(MacOS, Ubuntu e Windows), Busca Online no Serpro, Busca Online no ITI.</p>
+							<b class="list-group-item-heading">Novo Mecanismo de Descoberta da Cadeia de Autoridades do Certificado</b>
+							<p class="list-group-item-text">
+								Em várias situações o componente precisa ter certeza que o certificado possui a cadeia de certificados das Autoridades Certificadoras
+								corretas, e para isso é necessário que o componente saiba quais existem.
+								<br/>
+								<br/> Anteriormente somente os certificados gerados pelas Autoridades Certificadoras que estivessem dentro do componente
+								(por isso ele precisava ser atualizado com maior frequência) é que eram validados, agora o componente também tenta
+								encontrar a cadeia de outras maneiras, seguindo a seguinte ordem de descoberta:
+
+								<ul style="margin-top: 10px">
+									<li>Dentro do componente</li>
+									<li>Home do usuário</li>
+									<li>Busca no Serpro</li>
+									<li>Busca no ITI</li>
+								</ul>
+
+								Somente quando em nenhum destes locais possuir todos os certificados para montar a cadeia de autoridades certificadoras do
+								certificado do usuário é que ocorre algum erro.
 						</div>
 						<div class="list-group-item">
 							<b class="list-group-item-heading">Atualização para Java 7</b>
@@ -86,7 +101,6 @@
 					<p>Para testar a nova versão do componente certificate em seu projeto atualize suas dependencias do maven confme as sugestões
 						abaixo:
 						<p>
-
 							<pre><code class="xml">&lt;dependency&gt;
 	&lt;groupId&gt;br.gov.frameworkdemoiselle.component&lt;/groupId&gt;
 	&lt;artifactId&gt;demoiselle-certificate-core&lt;/artifactId&gt;

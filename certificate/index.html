@@ -63,12 +63,12 @@
 						<div class="list-group-item">
 							<b class="list-group-item-heading">Novo Mecanismo de Descoberta da Cadeia de Autoridades do Certificado</b>
 							<p class="list-group-item-text">
-								Em várias situações o componente precisa ter certeza que o certificado possui a cadeia de certificados das Autoridades Certificadoras
-								corretas, e para isso é necessário que o componente saiba quais existem.
+								Em várias situações o componente precisa ter certeza que o certificado informado possui a cadeia de certificados das Autoridades Certificadoras
+								corretas, e para isso é necessário que o componente saiba todas as quais existem para fazer a validação.
 								<br/>
-								<br/> Anteriormente somente os certificados gerados pelas Autoridades Certificadoras que estivessem dentro do componente
-								(por isso ele precisava ser atualizado com maior frequência) é que eram validados, agora o componente também tenta
-								encontrar a cadeia de outras maneiras, seguindo a seguinte ordem de descoberta:
+								<br/> Antes da versão 1.2.0 somente os certificados gerados pelas Autoridades Certificadoras que estivessem dentro do componente
+								(por isso ele precisava ser atualizado com maior frequência) eram válidos, agora o componente também tenta
+								encontrar a cadeia de Autoridades de outras maneiras, seguindo a seguinte ordem de descoberta:
 
 								<ul style="margin-top: 10px">
 									<li>Dentro do componente</li>
@@ -98,7 +98,7 @@
 					<h3>Como Atualizar</h3>
 				</div>
 				<div class="col-md-12">
-					<p>Para testar a nova versão do componente certificate em seu projeto atualize suas dependencias do maven confme as sugestões
+					<p>Para testar a nova versão do componente certificate em seu projeto atualize suas dependencias do maven conforme as sugestões
 						abaixo:
 						<p>
 							<pre><code class="xml">&lt;dependency&gt;

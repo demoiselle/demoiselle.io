@@ -46,9 +46,10 @@
 			<h3 class="text-muted">&nbsp;</h3>
 		</div>
 
-		<div class="jumbotron"><!--<html lang="pt-br"  manifest="manifest.appcache">-->
+		<div class="jumbotron">
+			<!--<html lang="pt-br"  manifest="manifest.appcache">-->
 			<h1>Demoiselle <b>Certificate</b></h1>
-			<h2>Versão Candidata <b>1.2.0-RC1</b> Liberada!</h2>
+			<h2>Versão Candidata <b>1.2.0-RC2</b> Liberada!</h2>
 		</div>
 		<div class="marketing">
 
@@ -62,12 +63,12 @@
 						<div class="list-group-item">
 							<b class="list-group-item-heading">Novo Mecanismo de Descoberta da Cadeia de Autoridades do Certificado</b>
 							<p class="list-group-item-text">
-								Em várias situações o componente precisa ter certeza que o certificado informado possui a cadeia de certificados das Autoridades Certificadoras
-								corretas, e para isso é necessário que o componente saiba todas as quais existem para fazer a validação.
+								Em várias situações o componente precisa ter certeza que o certificado informado possui a cadeia de certificados das Autoridades
+								Certificadoras corretas, e para isso é necessário que o componente saiba todas as quais existem para fazer a validação.
 								<br/>
-								<br/> Antes da versão 1.2.0 somente os certificados gerados pelas Autoridades Certificadoras que estivessem dentro do componente
-								(por isso ele precisava ser atualizado com maior frequência) eram válidos, agora o componente também tenta
-								encontrar a cadeia de Autoridades de outras maneiras, seguindo a seguinte ordem de descoberta:
+								<br/> Antes da versão 1.2.0 somente os certificados gerados pelas Autoridades Certificadoras que estivessem dentro
+								do componente (por isso ele precisava ser atualizado com maior frequência) eram válidos, agora o componente também
+								tenta encontrar a cadeia de Autoridades de outras maneiras, seguindo a seguinte ordem de descoberta:
 
 								<ul style="margin-top: 10px">
 									<li>Dentro do componente</li>
@@ -81,8 +82,12 @@
 							</p>
 						</div>
 						<div class="list-group-item">
-							<b class="list-group-item-heading">Atualização para Java 7</b>
-							<p class="list-group-item-text">Agora a versão necessária para rodar o componente é a versão 7 do Java.</p>
+							<b class="list-group-item-heading" style="text-decoration: line-through;">Atualização para Java 7</b>
+							<p class="list-group-item-text" style="text-decoration: line-through;">Agora a versão necessária para rodar o componente é a versão 7 do Java.</p>
+						</div>
+						<div class="list-group-item">
+							<b class="list-group-item-heading">Utilização do Java 6</b>
+							<p class="list-group-item-text">Devido a problemas em projetos em produção que utilizão a versão 6 do Java foi necessário fazer o downgrade da versão 7 e agora o componente é compatível com Java 6 ou superior.</p>
 						</div>
 						<div class="list-group-item">
 							<b class="list-group-item-heading">Correção da validação da identificação da política (Hash e Links da Política)</b>
@@ -104,20 +109,20 @@
 							<pre><code class="xml">&lt;dependency&gt;
 	&lt;groupId&gt;br.gov.frameworkdemoiselle.component&lt;/groupId&gt;
 	&lt;artifactId&gt;demoiselle-certificate-core&lt;/artifactId&gt;
-	&lt;version&gt;1.2.0-RC1&lt;/version&gt;
+	&lt;version&gt;1.2.0-RC2&lt;/version&gt;
 &lt;/dependency&gt;
 &lt;dependency&gt;
 	&lt;groupId&gt;br.gov.frameworkdemoiselle.component&lt;/groupId&gt;
 	&lt;artifactId&gt;demoiselle-certificate-ca-icpbrasil&lt;/artifactId&gt;
-	&lt;version&gt;1.2.0-RC1&lt;/version&gt;
+	&lt;version&gt;1.2.0-RC2&lt;/version&gt;
 &lt;/dependency&gt;
 &lt;dependency&gt;
 	&lt;groupId&gt;br.gov.frameworkdemoiselle.component&lt;/groupId&gt;
 	&lt;artifactId&gt;demoiselle-certificate-signer&lt;/artifactId&gt;
-	&lt;version&gt;1.2.0-RC1&lt;/version&gt;
+	&lt;version&gt;1.2.0-RC2&lt;/version&gt;
 &lt;/dependency&gt;</code></pre>
 
-							<p class="text-warning bg-warning" style="padding: 10px;">Para outras partes do componente como Applet e Desktop também é possível atualizar para a versão <b>1.2.0-RC1</b>.
+							<p class="text-warning bg-warning" style="padding: 10px;">Para outras partes do componente como Applet e Desktop também é possível atualizar para a versão <b>1.2.0-RC2</b>.
 							</p>
 
 
@@ -133,9 +138,10 @@
 					<h3>Mais Informações</h3>
 				</div>
 
-				<div class="col-lg-4">					
+				<div class="col-lg-4">
 					<h4>Teve Problemas?</h4>
-					<p><a target="_blank" class="btn btn-lg btn-success" href="http://demoiselle.sourceforge.net/docs/components/certificate/reference/1.2.0-RC1/" role="button">Documentação</a></p>
+					<p><a target="_blank" class="btn btn-lg btn-success" href="http://demoiselle.sourceforge.net/docs/components/certificate/reference/1.2.0-RC2/"
+							role="button">Documentação</a></p>
 				</div>
 
 				<div class="col-lg-4">

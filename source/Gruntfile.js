@@ -59,7 +59,7 @@ module.exports = function (grunt) {
                 files: [
                     '<%= yeoman.app %>/{,*/}*.html',
                     '.tmp/styles/{,*/}*.css',
-                    '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+                    //'<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
                     '<%= yeoman.app %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             }
@@ -260,7 +260,7 @@ module.exports = function (grunt) {
             html: ['<%= yeoman.dist %>/{,*/}*.html'],
             css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
             options: {
-                assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images']
+                assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/img']
             }
         },
         // The following *-min tasks will produce minified files in the dist folder
@@ -289,24 +289,24 @@ module.exports = function (grunt) {
         //   dist: {}
         // },
 
-        // imagemin: {
-        //   dist: {
-        //     files: [{
-        //       expand: true,
-        //       cwd: '<%= yeoman.app %>/images',
-        //       src: '{,*/}*.{png,jpg,jpeg,gif}',
-        //       dest: '<%= yeoman.dist %>/images'
-        //     }]
-        //   }
-        // },
+         imagemin: {
+           dist: {
+             files: [{
+               expand: true,
+               cwd: '<%= yeoman.app %>/img',
+               src: '{,*/}*.{png,jpg,jpeg,gif}',
+               dest: '<%= yeoman.dist %>/img'
+             }]
+           }
+         },
 
         svgmin: {
             dist: {
                 files: [{
                         expand: true,
-                        cwd: '<%= yeoman.app %>/images',
+                        cwd: '<%= yeoman.app %>/img',
                         src: '{,*/}*.svg',
-                        dest: '<%= yeoman.dist %>/images'
+                        dest: '<%= yeoman.dist %>/img'
                     }]
             }
         },
@@ -361,8 +361,8 @@ module.exports = function (grunt) {
                             '*.manifest',
                             '*.webapp',
                             'views/{,*/}*.html',
-                            'images/{,*/}*',
-                            'img/{,*/}*',
+                           // 'images/{,*/}*',
+                           // 'img/{,*/}*',
                             'fonts/{,*/}*',
                             'fonts/lato/{,*/}*.*',
                             'fonts-awesome/{,*/}*',
@@ -373,8 +373,8 @@ module.exports = function (grunt) {
                         ]
                     }, {
                         expand: true,
-                        cwd: '.tmp/images',
-                        dest: '<%= yeoman.dist %>/images',
+                        cwd: '.tmp/img',
+                        dest: '<%= yeoman.dist %>/img',
                         src: ['generated/*']
                     }, {
                         expand: true,
@@ -419,7 +419,7 @@ module.exports = function (grunt) {
             ],
             dist: [
                 'copy:styles',
-                //'imagemin',
+                'imagemin',
                 'svgmin'
             ]
         },
@@ -454,7 +454,7 @@ module.exports = function (grunt) {
                 constants: {
                     ENV: {
                         name: 'production',
-                        apiEndpoint: 'https://cep-fwkdemoiselle.rhcloud.com/'
+                        apiEndpoint: '/'
                     }
                 }
             }

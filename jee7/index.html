@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html amp lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Portal Framework Demoiselle">
+    <meta name="author" content="Demoiselle">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Demoiselle Framework - JEE7</title>
+    <link rel="canonical" href="http://demoiselle.io/jee7/index.html" />
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <span id="home-top"></span>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav pull-right navbar-nav">
+                    <li>
+                        <a href="../index.html" class="home-top"><i class="fa fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="sobre">Sobre</a>
+                    </li>
+                    <li class="link-exemplos">
+                        <a href="#" class="exemplos">Exemplos</a>
+                    </li>
+                    <li class="link-contato">
+                        <a href="#" class="contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Image Background Page Header -->
+    <header class="business-header">
+        <div class="container-header">
+            <a class="logo-header" href="#"></a>
+            <h1>Framework de desenvolvimento JEE7, com diversos facilitadores de segurança, CRUD, mensagens, configurações e
+                frontend.
+            </h1>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div id="container" class="container">
+        <div class="alert alert-success" role="alert">
+            <h2>Versão Final 3.0.0 Liberada!</h2>
+            <p>Nova versão focada em microserviços, além de toda modernização de suas antigas funcionalidades conta com a possibilidade
+                de integração de com microcontainers em sistemas operacionais prontos para a núvem.
+                <a href="https://github.com/demoiselle/framework" target="_blank">https://github.com/demoiselle/framework</a>.</p>
+        </div>
+        <h1 id="sobre">Sobre o Framework Demoiselle</h1>
+        <hr>
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Funcionalidades</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Como Usar</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Mais Informações</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <!-- Funcionalidades -->
+                    <br>
+                    <h4><a href="https://demoiselle.gitbooks.io/documentacao-jee/content/security.html">Segurança</a></h4>
+                    <p>Implementações de Tokens para comunicação stateless, facilitadores de autenticação e autorização.</p>
+                    <hr>
+                    <h4><a href="https://demoiselle.gitbooks.io/documentacao-jee/content/crud.html">CRUD</a></h4>
+                    <p>Facilitador de CRUD, tem vários facilitadores para proporcionar produtividade no desenvolvimento</p>
+                    <hr>
+                    <h4><a href="https://demoiselle.gitbooks.io/documentacao-jee/content/rest.html">REST</a></h4>
+                    <p>Configurações e parametrização específicas por serviço</p>
+                    <hr>
+                    <h4><a href="https://demoiselle.gitbooks.io/documentacao-jee/content/configuration.html">Configuração</a></h4>
+                    <p>Facilitador para ler as configurações da sua app em vários meios como properties, system, xml</p>
+                    <hr>
+                    <h4><a href="https://demoiselle.gitbooks.io/documentacao-jee/content/scripts.html">Scripts</a></h4>
+                    <p>Engine para processar scripts de regras em tempo de execução</p>
+                    <hr>
+                    <h4><a href="https://demoiselle.gitbooks.io/documentacao-jee/content/multitenancy.html">Multitenancy</a></h4>
+                    <p>Facilitadores para desenvolvimento de app única com isolamento de clientes. </p>
+                    <hr>
+
+                    <!-- -->
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <br>
+                    <p>Coloque o parent no pom do seu projeto que as funcionalidades, core, crud e security serão adicionadas,
+                        junto a capacidade dos builds swarm e docker
+                    </p>
+                    <!-- HTML generated using hilite.me -->
+                    <div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;">
+                        <pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;parent&gt;</span>
+	<span style="color: #007700">&lt;groupId&gt;</span>org.demoiselle.jee<span style="color: #007700">&lt;/groupId&gt;</span>
+	<span style="color: #007700">&lt;artifactId&gt;</span>demoiselle-parent-rest<span style="color: #007700">&lt;/artifactId&gt;</span>
+	<span style="color: #007700">&lt;version&gt;</span>3.0.0<span style="color: #007700">&lt;/version&gt;</span>
+                     <span style="color: #007700">&lt;/parent&gt;</span>
+                     </pre>
+                    </div>
+                    <br><a class="btn btn-default btn-sm" target="_blank" href="https://demoiselle.gitbooks.io/documentacao-jee/content/roteiro_rapido.html"
+                        role="button">Roteiro Rápido</a>
+                    <br>
+                    <br><a class="btn btn-default btn-sm" target="_blank" href="https://demoiselle.gitbooks.io/treinamento-v3/content/guia-rapido.html"
+                        role="button">Gerador de código</a>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <br><br>
+                    <!-- Quer colaborar-->
+                    <div class="row circles">
+                        <div class="col-sm-4">
+                            <img class="img-circle img-responsive img-center" src="img/bg-documentacao.jpg" alt="">
+                            <h2>Teve Problemas?</h2>
+                            <p>Acesse a documentação do projeto.</p>
+                            <a class="btn btn-default btn-sm" target="_blank" href="https://demoiselle.gitbooks.io/documentacao-jee/content/" role="button">Documentação</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="img-circle img-responsive img-center" src="img/bg-help.jpg" alt="">
+                            <h2>Precisa de Ajuda?</h2>
+                            <p>Acesse a Issues do Projeto</p>
+                            <a class="btn btn-default btn-sm" target="_blank" href="https://github.com/demoiselle/framework/issues" role="button">
+                                <i>Issues</i>do Projeto</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="img-circle img-responsive img-center" src="img/bg-codigo-fonte.jpg" alt="">
+                            <h2>Quer Colaborar?</h2>
+                            <p>Acesse aqui o código fonte do projeto.</p>
+                            <a class="btn btn-default btn-sm" target="_blank" href="https://github.com/demoiselle/framework" role="button">Código Fonte</a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- -->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="exemplos" class="section-heading">Exemplos</h1>
+                    <hr>
+                    <h3 class="section-subheading text-muted">Veja abaixo alguns dos nossos exemplos.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4 class="service-heading">ToDoList</h4>
+                    <p class="text-muted">Exemplo básico de uma ToDoList, apresentamos vários modelos de implementação para consumo de um mesmo
+                        serviço.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">CEP</h4>
+                    <p class="text-muted">Neste exemplo exploramos as funcionalidades do CRUD com seus facilitadores para consulta avançada.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">PUSH</h4>
+                    <p class="text-muted">Servidor de push para web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="contato">Contato</h1>
+                    <hr>
+                    <h3>Dúvidas ou sugestões? Envie-nos uma mensagem.</h3>
+                    <a class="btn btn-default btn-sm" target="_blank" href="https://github.com/demoiselle/framework/issues" role="button">
+                        <i>Issues</i> do Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="team">Equipe</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-3">
+                        <br>
+                        <div itemscope itemtype="http://schema.org/Person">
+                            <img src="https://www.gravatar.com/avatar/a535962e6ccf3abec732d42fc351dbe9?size=77" itemprop="image" />
+                            <br>
+                            <span itemprop="name">Cassio</span>
+                            <br>
+                            <span itemprop="jobTitle">Analista</span>
+                            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">SERPRO</span>
+                            </div>
+                            <a href="mailto:cassio@gmail.com" itemprop="email">cassio@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <br>
+                        <div itemscope itemtype="http://schema.org/Person">
+                            <img src="https://www.gravatar.com/avatar/a535962e6ccf3abec732d42fc351dbe9?size=77" itemprop="image" />
+                            <br>
+                            <span itemprop="name">Clóvis Júnior</span>
+                            <br>
+                            <span itemprop="jobTitle">Analista</span>
+                            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">SERPRO</span>
+                            </div>
+                            <a href="mailto:clovisjunior2009@gmail.com" itemprop="email">clovisjunior2009@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <br>
+                        <div itemscope itemtype="http://schema.org/Person">
+                            <img src="https://www.gravatar.com/avatar/a535962e6ccf3abec732d42fc351dbe9?size=77" itemprop="image" />
+                            <br>
+                            <span itemprop="name">Marcelo Teixeira</span>
+                            <br>
+                            <span itemprop="jobTitle">Analista</span>
+                            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">SERPRO</span>
+                            </div>
+                            <a href="mailto:paulopinheiro777@gmail.com" itemprop="email">paulopinheiro777@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <br>
+                        <div itemscope itemtype="http://schema.org/Person">
+                            <img src="https://www.gravatar.com/avatar/a535962e6ccf3abec732d42fc351dbe9?size=77" itemprop="image" />
+                            <br>
+                            <span itemprop="name">Paulo Gladson</span>
+                            <br>
+                            <span itemprop="jobTitle">Analista</span>
+                            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">SERPRO</span>
+                            </div>
+                            <a href="mailto:paulopinheiro777@gmail.com" itemprop="email">paulopinheiro777@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-3">
+                        <br>
+                        <div itemscope itemtype="http://schema.org/Person">
+                            <img src="https://www.gravatar.com/avatar/a535962e6ccf3abec732d42fc351dbe9?size=77" itemprop="image" />
+                            <br>
+                            <span itemprop="name">Vanderson Botelho</span>
+                            <br>
+                            <span itemprop="jobTitle">Analista</span>
+                            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">SERPRO</span>
+                            </div>
+                            <a href="mailto:paulopinheiro777@gmail.com" itemprop="email">paulopinheiro777@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; Framework Demoiselle 2017</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(".nav > li > a").click(function () {
+            var el = $("#" + $(this).attr('class') + "");
+            $(".nav > li > a").removeClass('active');
+            $(this).addClass('active');
+            $('html,body').animate({ scrollTop: el.offset().top - 60 }, 'slow');
+        });
+
+//		function scroll_to_anchor(anchor_id){
+//				var tag = $("#"+anchor_id+"");
+//				$('html,body').animate({scrollTop: tag.offset().top-60},'slow');
+//		}
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-33820437-3', 'auto');
+        ga('require', 'GTM-NGGJTDK');
+        ga('send', 'pageview');
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Demoiselle Framework",
+            "alternateName": "Framework de desenvolvimento JEE7",
+            "url": "http://demoiselle.io/jee7"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "SoftwareApplication",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.2",
+                "reviewCount": "1832"
+            },
+            "offers": {
+                "@type": "Offer",
+                "availability": "http://schema.org/InStock",
+                "price": "0.00",
+                "priceCurrency": "USD"
+            },
+            "applicationCategory": "Framework",
+            "applicationSuite": "Demoiselle",
+            "downloadUrl": "https://github.com/demoiselle/framework.git",
+            "installUrl": "https://demoiselle.gitbooks.io/documentacao-jee/content/roteiro_rapido.html",
+            "award": "",
+            "license": "LGPLv2",
+            "url": "http://demoiselle.io",
+            "image": "http://demoiselle.io/img/logo-demoiselle-detail.png",
+            "sameAs": [
+                "http://www.facebook.com/demoiselle.framework",
+                "http://www.linkedin.com/in/demoiselle",
+                "http://plus.google.com/demoiselleFraemwork"
+            ],
+            "operatingSystem": [
+            "Windows", "Linux", "OSX"
+            ]
+        }
+    </script>
+</body>
+
+</html>

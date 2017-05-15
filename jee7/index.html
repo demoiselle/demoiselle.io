@@ -96,6 +96,7 @@
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Funcionalidades</a></li>
                 <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Como Usar</a></li>
                 <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Mais Informações</a></li>
+
             </ul>
 
             <!-- Tab panes -->
@@ -173,6 +174,7 @@
 
                     <!-- -->
                 </div>
+
             </div>
 
         </div>
@@ -221,6 +223,20 @@
             </div>
         </div>
     </section>
+
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="contato">Buscar na documentação</h1>
+                    <hr>
+                    <gcse:search></gcse:search>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="team">
         <div class="container">
             <div class="row">
@@ -317,6 +333,19 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script>
+        (function () {
+            var cx = '018332017248733716210:zwjp_3ijdty';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+
+    </script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

@@ -1,155 +1,662 @@
-<!doctype html><!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]--><!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]--><!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]--><!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]--><!--[if gt IE 9]><!--> <html ng-app="app" lang="pt-br" manifest="manifest.appcache"> <!--<![endif]--> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1"> <meta name="description" content="Portal Framework Demoiselle"> <meta name="author" content="SERPRO"> <title>Demoiselle Framework</title> <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">--> <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css"> <link href="http://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css"> <link rel="stylesheet" href="styles/main.9d6fc4b4.css"> <!--[if IE 9]>
-                <script src="PIE_IE9.js"></script>
-        <![endif]--> <!--[if lt IE 9]>
-                <script src="PIE_IE678.js"></script>
-        <![endif]--> <!--[if lt IE 9]>
-                <script src="html5shiv.js"></script>
-        <![endif]--> <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <link rel="manifest" href="/manifest.json">  <body id="home"> <!-- Preloader --> <div id="preloader"> <div id="status"></div> </div> <!-- FullScreen --> <div class="intro-header"> <div class="col-xs-12 text-center abcen1"> <h1 class="h2_home wow fadeIn" data-wow-delay="0.4s">Demoiselle</h1> <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Framework JEE7</h3> </div> <!-- /.container --> <div class="col-xs-12 text-center abcen wow fadeIn"> <div class="button_down"> <a class="imgcircle wow bounceInUp" data-wow-duration="2.5s" href="#oquee"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a> </div> </div> </div> <!-- NavBar--> <nav class="navbar-default" role="navigation"> <div class="container"> <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-left" href="#home"> <img src="img/demoiselle.png" alt=""> </a> </div> <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse"> <ul class="nav navbar-nav"> <li class="menuItem"><a href="#oquee">O que é?</a></li> <li class="menuItem"><a href="#exemplos">Exemplos</a></li> <li class="menuItem"><a href="#facilitadores">Facilitadores</a></li> <li class="menuItem"><a href="#projetos">Projetos</a></li> <li class="menuItem"><a href="#comunidade">Comunidade</a></li> <li class="menuItem"><a href="https://demoiselle.gitbooks.io/documentacao-jee/content/" target="_blank">Documentação</a></li> </ul> </div> </div> </nav> <!-- What is --> <div id="oquee" class="content-section-b" style="border-top: 0"> <div class="container"> <div class="col-md-6 col-md-offset-3 text-center wrap_title"> <h2>O que é?</h2> <h3>Framework de desenvolvimento JEE7</h3> <p class="lead" style="margin-top:0">O Demoiselle Framework implementa o conceito de framework integrador. Seu objetivo é facilitar a construção de aplicações minimizando tempo dedicado à escolha e integração de frameworks especialistas, o que resulta no aumento da produtividade e garante a manutenibilidade dos sistemas. Disponibiliza mecanismos reusáveis voltados as funcionalidades mais comuns de uma aplicação (arquitetura, segurança, transação, mensagem, configuração, tratamento de exceções, etc).+ O nome Demoiselle é uma homenagem à série de aeroplanos construídos por Santos Dummont entre 1907 e 1909. Também conhecido como Libellule, as Demoiselles foram os melhores, menores e mais baratos aviões da sua época. Como sua intenção era popularizar a aviação com fabricação em larga escala, o inventor disponibilizou os planos em revistas técnicas para qualquer pessoa que se interessasse. O Demoiselle Framework usa a mesma filosofia do “Pai da Aviação”, tendo sido disponibilizado como software livre em abril de 2009, sob a licença livre LGPL version 3.</p> </div> </div> </div> <!-- Use it --> <div id="exemplos" class="content-section-a"> <div class="container"> <div class="row"> <div class="col-sm-4 pull-right wow fadeInRightBig"> <img class="img-responsive img-rounded" src="img/slide/2.png" alt=""> </div> <div class="col-sm-8 wow fadeInLeftBig" data-animation-delay="200"> <h3 class="section-heading">Exemplos</h3> <div class="sub-title lead3">ToDoList</div> <p class="lead"> Exemplo básico de uma ToDoList, apresentamos vários modelos de implementação para consumo de um mesmo serviço <ul> <li> <a target="_blank" href="https://todo-fwkdemoiselle.rhcloud.com/">Servidor Wildfly 10.1.0 JEE7 - Banco em Memória</a> </li> <li> <a target="_blank" href="https://demoiselle.github.io/example/v3/todoList/progressive/www/">Frontend em Angular com IONIC</a> </li> <li> <a target="_blank" href="https://demoiselle.github.io/example/v3/todoList/frontend/dist/">Frontend em Angular com bootstrap</a> </li> <!--                            <li>
-                                                            <a target="_blank" href="http://demoiselle.io/jee/example/todo/ngprime">Frontend em Angular com NGPrime</a>
-                                                        </li>--> <li> <a target="_blank" href="https://play.google.com/store/apps/details?id=org.demoiselle.todo">App android gerado com IONIC</a> </li> <li> <a target="_blank" href="https://github.com/demoiselle/example/tree/master/v3/todoList">Repositório do projeto</a> </li> </ul> </p> <div class="sub-title lead3">CEP</div> <p class="lead"> Neste exemplo exploramos as funcionalidades do CRUD com seus facilitadores para consulta avançada </p> <ul> <li> <a target="_blank" href="https://cep-fwkdemoiselle.rhcloud.com/swagger">Servidor Wildfly 10.1.0 JEE7 - Base com +900k registros</a> </li> <li> <a target="_blank" href="https://cep-fwkdemoiselle.rhcloud.com">Progressive App em AngularJS</a> </li> <li> <a target="_blank" href="https://github.com/demoiselle/example/tree/master/v3/cep">Repositório do projeto</a> </li> </ul> <div class="sub-title lead3">PUSH</div> <p class="lead"> Servidor de push para web </p> <ul> <li> <a target="_blank" href="https://push-fwkdemoiselle.rhcloud.com">Servidor Wildfly 10.1.0 JEE7 com WebSocket</a> </li> <li> <a target="_blank" href="https://demoiselle.github.io/example/v3/push/frontend/dist/">Progressive App em AngularJS</a> </li> <li> <a target="_blank" href="https://github.com/demoiselle/example/tree/master/v3/push">Repositório do projeto</a> </li> </ul> </div> </div> </div> <!-- /.container --> </div> <!--        <div id ="gerador"  class="content-section-a"> 
-        
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6 wow fadeInLeftBig">
-                                <div id="owl-demo-1" class="owl-carousel">
-                                    <a href="img/icon/browser.svg" class="image-link">
-                                        <div class="item">
-                                            <img  class="img-responsive img-rounded" src="img/icon/bulb.svg" alt="">
-                                        </div>
-                                    </a>
-                                </div>       
-                            </div>
-        
-                            <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">   
-                                <h3 class="section-heading">generator-demoiselle</h3>
-                                <div class="sub-title lead3"> </div>
-                                <p class="lead">
-                                    Diminua o tempo de geração de suas apps, fizemos uma ferramenta que te ajuda a economizar tempo fazendo tarefas repetitivas por você
-                                </p>
-        
-                                <p><a target="_blank" class="btn btn-embossed btn-primary" href="https://github.com/demoiselle/generator-demoiselle" role="button">Repositório do projeto</a> 
-                                    <a target="_blank" class="btn btn-embossed btn-info" href="https://youtube.com/" role="button">Demonstração</a></p>
-                            </div>  			
-                        </div>
-                    </div>
-                </div>--> <div id="facilitadores" class="content-section-b"> <div class="container"> <div class="row"> <div class="col-sm-4 wow fadeInDown text-center"> <img class="rotate" src="img/icon/browser.svg" alt="Generic placeholder image"> <h3>Rest</h3> <p><a target="_blank" class="btn btn-embossed btn-primary view" role="button" href="https://demoiselle.gitbooks.io/documentacao-jee/content/rest.html">Entenda melhor</a></p> <p class="lead">Configurações e parametrização específicas por serviço</p> <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> --> </div><!-- /.col-lg-4 --> <div class="col-sm-4 wow fadeInDown text-center"> <img class="rotate" src="img/icon/box.svg" alt="Generic placeholder image"> <h3>CRUD</h3> <p><a target="_blank" class="btn btn-embossed btn-primary view" role="button" href="https://demoiselle.gitbooks.io/documentacao-jee/content/crud.html">Entenda melhor</a></p> <p class="lead">Facilitador de CRUD, tem vários facilitadores para proporcionar produtividade no desenvolvimento </p> </div><!-- /.col-lg-4 --> <div class="col-sm-4 wow fadeInDown text-center"> <img class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image"> <h3>Configuration</h3> <p><a target="_blank" class="btn btn-embossed btn-primary view" role="button" href="https://demoiselle.gitbooks.io/documentacao-jee/content/configuration.html">Entenda melhor</a></p> <p class="lead">Facilitador para ler as configurações da sua app em vários meios como properties, system, xml</p> </div><!-- /.col-lg-4 --> </div><!-- /.row --> <div class="row"> <div class="col-sm-4 wow fadeInDown text-center"> <img class="rotate" src="img/icon/bank.svg" alt="Generic placeholder image"> <h3>Security</h3> <p><a target="_blank" class="btn btn-embossed btn-primary view" role="button" href="https://demoiselle.gitbooks.io/documentacao-jee/content/security.html">Entenda melhor</a></p> <p class="lead">Implementações de Tokens para comunicação stateless, facilitadores de autenticação e autorização</p> </div><!-- /.col-lg-4 --> <div class="col-sm-4 wow fadeInDown text-center"> <img class="rotate" src="img/icon/beacon.svg" alt="Generic placeholder image"> <h3>Scripts</h3> <p><a target="_blank" class="btn btn-embossed btn-primary view" role="button" href="https://demoiselle.gitbooks.io/documentacao-jee/content/scripts.html">Entenda melhor</a></p> <p class="lead">Engine para processar scripts de regras em tempo de execução</p> </div><!-- /.col-lg-4 --> <div class="col-sm-4 wow fadeInDown text-center"> <img class="rotate" src="img/icon/tactics.svg" alt="Generic placeholder image"> <h3>Multitenance</h3> <p><a target="_blank" class="btn btn-embossed btn-primary view" role="button" href="https://demoiselle.gitbooks.io/documentacao-jee/content/multitenancy.html">Entenda melhor</a></p> <p class="lead">Facilitadores para desenvolvimento de app única com isolamento de clientes. </p> </div><!-- /.col-lg-4 --> </div><!-- /.row --> </div> </div> <div id="projetos" class="content-section-a"> <div class="container"> <div class="row"> <div class="col-sm-4 wow fadeInDown text-center"> <img class="rotate" src="img/icon/clipboard.svg" alt="Generic placeholder image"> <h3>Signer</h3> <p><a target="_blank" class="btn btn-embossed btn-primary view" role="button" href="http://demoiselle.sourceforge.net/docs/components/certificate/reference/1.2.0-RC1/html_single/">Entenda melhor</a></p> <p class="lead">Assinador digital</p> <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> --> </div><!-- /.col-lg-4 --> <div class="col-sm-4 wow fadeInDown text-center"> <img class="rotate" src="img/icon/pencil.svg" alt="Generic placeholder image"> <h3>Behave</h3> <p><a target="_blank" class="btn btn-embossed btn-primary view" role="button" href="https://github.com/demoiselle/behave/">Entenda melhor</a></p> <p class="lead">Teste funcionais automatizados</p> </div><!-- /.col-lg-4 --> <div class="col-sm-4 wow fadeInDown text-center"> <img class="rotate" src="img/icon/bulb.svg" alt="Generic placeholder image"> <h3>Gerador</h3> <p><a target="_blank" class="btn btn-embossed btn-primary view" role="button" href="https://github.com/demoiselle/framework-documentation/blob/master/generator-demoiselle.md">Entenda melhor</a></p> <p class="lead">Apoio na geração de apps e funcionalidades.</p> </div><!-- /.col-lg-4 --> </div><!-- /.row --> </div> </div> <!--        <div id ="docs" class="content-section-a">
-        
-                    <div class="container">
-        
-                        <div class="row">
-        
-                            <div class="col-sm-6 pull-right wow fadeInRightBig">
-                                <img class="img-responsive " src="img/doge.png" alt="">
-                            </div>
-        
-                            <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                                <h3 class="section-heading">Documentação</h3>
-                                <p class="lead">A special thanks to Death to the Stock Photo for 
-                                    providing the photographs that you see in this template. 
-                                </p>
-        
-                                <ul class="descp lead2">
-                                    <li><i class="glyphicon glyphicon-signal"></i> Reliable and Secure Platform</li>
-                                    <li><i class="glyphicon glyphicon-refresh"></i> Everything is perfectly orgainized for future</li>
-                                    <li><i class="glyphicon glyphicon-headphones"></i> Attach large file easily</li>
-                                </ul>
-                            </div>           
-                        </div>
-                    </div>
-        
-                </div>--> <div class="content-section-c"> <div class="container"> <div class="row"> <div class="col-md-6 col-md-offset-3 text-center white"> <h2>Fale com a Comunidade</h2> <p class="lead" style="margin-top:0">Para dúvidas, problemas ou sugestões faça seu relato.</p> </div> <div class="col-md-6 col-md-offset-3 text-center"> <div class="mockup-content"> <div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1"> <button type="button"> <a target="_blank" href="https://github.com/demoiselle/framework/issues">Issues</a> </button> </div> </div> </div> </div> </div> </div> <!--Credits--> <!--        <div id="credits" class="content-section-a">
-                    <div class="container">
-                        <div class="row">
-        
-                            <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-                                <h2>Credits</h2>
-                                <p class="lead" style="margin-top:0">A special thanks to Death.</p>
-                            </div>
-        
-                            <div class="col-sm-6  block wow bounceIn">
-                                <div class="row">
-                                    <div class="col-md-4 box-icon rotate"> 
-                                        <i class="fa fa-desktop fa-4x "> </i> 
-                                    </div>
-                                    <div class="col-md-8 box-ct">
-                                        <h3> Bootstrap </h3>
-                                        <p> Lorem ipsum dolor sit ametconsectetur adipiscing elit. Suspendisse orci quam. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 block wow bounceIn">
-                                <div class="row">
-                                    <div class="col-md-4 box-icon rotate"> 
-                                        <i class="fa fa-picture-o fa-4x "> </i> 
-                                    </div>
-                                    <div class="col-md-8 box-ct">
-                                        <h3> Owl-Carousel </h3>
-                                        <p> Nullam mo  arcu ac molestie scelerisqu vulputate, molestie ligula gravida, tempus ipsum.</p> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="row tworow">
-                            <div class="col-sm-6  block wow bounceIn">
-                                <div class="row">
-                                    <div class="col-md-4 box-icon rotate"> 
-                                        <i class="fa fa-magic fa-4x "> </i> 
-                                    </div>
-                                    <div class="col-md-8 box-ct">
-                                        <h3> Codrops </h3>
-                                        <p> Lorem ipsum dolor sit ametconsectetur adipiscing elit. Suspendisse orci quam. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 block wow bounceIn">
-                                <div class="row">
-                                    <div class="col-md-4 box-icon rotate"> 
-                                        <i class="fa fa-heart fa-4x "> </i> 
-                                    </div>
-                                    <div class="col-md-8 box-ct">
-                                        <h3> Lorem Ipsum</h3>
-                                        <p> Nullam mo  arcu ac molestie scelerisqu vulputate, molestie ligula gravida, tempus ipsum.</p> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>--> <!-- Banner Download --> <!--        <div id="downloadlink" class="banner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-                                <h2>Download Free</h2>
-                                <p class="lead" style="margin-top:0">Pay with a Tweet</p>
-                                <p><a class="btn btn-embossed btn-primary view" role="button">Free Download</a></p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>--> <!-- Contact --> <div id="comunidade" class="content-section-a"> <div class="container"> <div class="row"> <div class="col-md-6 col-md-offset-3 text-center wrap_title"> <h2><i class="fa fa-github fa-size"> </i>Github</h2> <p class="lead" style="margin-top:0"> <a target="_blank" class="btn btn-embossed btn-primary view" role="button" href="https://github.com/demoiselle">https://github.com/demoiselle</a> </p> </div> <div class="col-md-6 col-md-offset-3 text-center wrap_title"> <h3>Social</h3> <li class="social"> <a target="_blank" href="https://fb.com/demoiselleframework"><i class="fa fa-facebook-square fa-size"> </i></a> <a target="_blank" href="https://twitter.com/fwkdemoiselle"><i class="fa fa-twitter-square fa-size"> </i> </a> <a target="_blank" href="#"><i class="fa fa-google-plus-square fa-size"> </i></a> <a target="_blank" href="https://youtube.com/demoiselleframework"><i class="fa fa-youtube fa-size"> </i> </a> </li> </div> </div> </div> <footer> <div class="container"> <div class="row"> <div class="col-md-7"> <h3 class="footer-title">Thank you, Andrea Galanti</h3> <p> <a href="http://andreagalanti.it" target="_blank">andreagalanti.it</a> </p> <!-- LICENSE --> <a rel="cc:attributionURL" href="http://www.andreagalanti.it/flatfy" property="dc:title">Flatfy Theme </a> by <a rel="dc:creator" href="http://www.andreagalanti.it" property="cc:attributionName">Andrea Galanti</a> is licensed to the public under <br>the <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/it/deed.it">Creative Commons Attribution 3.0 License - NOT COMMERCIAL</a>. </div> <!-- /col-xs-7 --> <div class="col-md-5"> <div class="footer-banner"> <h3 class="footer-title">Equipe</h3> <ul> <li>Cassio</li> <li>Clóvis</li> <li>Jeferson</li> <li>Marcelo</li> <li>PauloGladson</li> <li>Vanderson</li> </ul> </div> </div> </div> </div> </footer> <script src="scripts/vendor.c9bec18a.js"></script> <script src="scripts/scripts.7d78cec1.js"></script> <script src="stickUp.min.js"></script> <!-- StikyMenu --> <script type="text/javascript">jQuery(function ($) {
-                    $(document).ready(function () {
-                        $('.navbar-default').stickUp();
-                    });
-                });</script> <script>(function (i, s, o, g, r, a, m) {
-                    i['GoogleAnalyticsObject'] = r;
-                    i[r] = i[r] || function () {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
-                    a = s.createElement(o),
-                            m = s.getElementsByTagName(o)[0];
-                    a.async = 1;
-                    a.src = g;
-                    m.parentNode.insertBefore(a, m)
-                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+<!DOCTYPE html>
+<html amp lang="pt-br">
 
-                ga('create', 'UA-33820437-3', 'auto');
-                ga('send', 'pageview');</script> <!-- Google Tag Manager --> <script>(function (w, d, s, l, i) {
-                    w[l] = w[l] || [];
-                    w[l].push({'gtm.start':
-                                new Date().getTime(), event: 'gtm.js'});
-                    var f = d.getElementsByTagName(s)[0],
-                            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-                    j.async = true;
-                    j.src =
-                            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                    f.parentNode.insertBefore(j, f);
-                })(window, document, 'script', 'dataLayer', 'GTM-T9M9LWG');</script> <!-- End Google Tag Manager --> </div> 
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Portal Framework Demoiselle">
+    <meta name="author" content="Demoiselle">
+    <meta name="google-site-verification" content="L05LBDDsb8h1KoFk0qy_hi6H4sJ8IFS8XQp_PbXLpeU" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <title>Framework Demoiselle</title>
+    <link rel="canonical" href="http://demoiselle.io/index.html" />
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <!-- <link href="css/agency.min.css" rel="stylesheet">-->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+</head>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+            "@id": "https://demoiselle.io/jee7/",
+            "name": "Jee7",
+            "image": "http://demoiselle.io/img/logo-header.png"
+            }
+        },{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+            "@id": "https://demoiselle.io/signer/",
+            "name": "Assinador",
+            "image": "http://demoiselle.io/img/logo-header.png"
+            }
+        },{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+            "@id": "https://demoiselle.io/gerador/",
+            "name": "Gerador",
+            "image": "http://demoiselle.io/img/logo-header.png"
+            }
+        }]
+        }
+
+</script>
+<script type="application/ld+json">
+    {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Demoiselle Framework",
+            "alternateName": "Framework de desenvolvimento JEE7",
+            "url": "http://demoiselle.io"
+        }
+
+</script>
+<script type="application/ld+json">
+    {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Demoiselle Framework",
+            "url": "http://demoiselle.io",
+            "logo": "http://demoiselle.io/img/logo-demoiselle-detail.png",
+            "sameAs": [
+                "https://pt-br.facebook.com/FrameworkDemoiselle/",
+                "https://www.linkedin.com/in/demoiselle-framework/",
+                "https://plus.google.com/+DemoiselleFramework",
+                "https://www.slideshare.net/DemoiselleFramework",
+                "https://twitter.com/fwkdemoiselle",
+                "https://youtube.com/DemoiselleFramework"
+            ],
+            "contactPoint": [
+                { "@type": "ContactPoint",
+                "telephone": "+55-41-3593-8703",
+                "contactType": "Only Developer"
+                }
+            ]
+        }
+
+</script>
+
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-top">O que é?</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a class="page-scroll" href="#services">Exemplos</a>
+                    </li>
+-->
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Produtos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Comunidade</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a class="page-scroll" href="#team">Facilitadores</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contatos</a>
+                    </li>
+-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">Demoiselle</div>
+                <div class="intro-lead-in">O Demoiselle Framework implementa o conceito de framework integrador, conta com uma gama de ferramentas e
+                    projetos para facilitar a construção de aplicações minimizando tempo dedicado à escolha e integração
+                    de frameworks especialistas, o que resulta no aumento da produtividade e garante a manutenibilidade dos
+                    sistemas.
+                </div>
+                <a href="#services" class="bt-home page-scroll btn btn-xl">Entenda mais</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section 
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Exemplos</h2>
+                    <h3 class="section-subheading text-muted">Veja abaixo alguns dos nossos exemplos.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">ToDoList</h4>
+                    <p class="text-muted">Exemplo básico de uma ToDoList, apresentamos vários modelos de implementação para consumo de um mesmo serviço.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">CEP</h4>
+                    <p class="text-muted">Neste exemplo exploramos as funcionalidades do CRUD com seus facilitadores para consulta avançada.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-exclamation-circle fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">PUSH</h4>
+                    <p class="text-muted">Servidor de push para web.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Produtos</h2>
+                    <h3 class="section-subheading text-muted">Abaixo listamos nossos principais produtos.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item" itemscope itemtype="http://schema.org/Product">
+                    <a href="jee7/index.html" class="portfolio-link">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img itemprop="image" src="img/portfolio/logo-demoiselle-products.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4 itemprop="name">JEE7 e AnjularJS</h4>
+                        <p itemprop="brand" class="text-muted">Software</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item" itemscope itemtype="http://schema.org/Product">
+                    <a href="signer/index.html" class="portfolio-link">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img itemprop="image" src="img/portfolio/logo-signer-products.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4 itemprop="name">Signer</h4>
+                        <p itemprop="brand" class="text-muted">Assinador digital</p>
+                    </div>
+                </div>
+                <!--
+                <div class="col-md-4 col-sm-6 portfolio-item" itemscope itemtype="http://schema.org/Product">
+                    <a href="#portfolioModal2a" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img itemprop="image" src="" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4 itemprop="name">Gerador Demoiselle</h4>
+                        <p itemprop="brand" class="text-muted">Apoio na geração de apps.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/thumbnail.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Behave</h4>
+                        <p class="text-muted">Teste funcionais automatizados.</p>
+                    </div>
+                </div>
+ -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Comunidade</h2>
+                    <h3 class="section-subheading text-muted">Acesse nosso repositório no Github.</h3>
+                    <img src="img/logo-github.png"><br><br>
+                    <button onclick="https://github.com/demoiselle" class="btn btn-xl" type="submit">https://github.com/demoiselle</button>
+                    <br><br>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Team Section 
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Facilitadores</h2>
+                    <h3 class="section-subheading text-muted">Nosso time está pronto a te atender.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img width="240" src="img/team/user-facilitador.png" class="img-responsive img-circle" alt="">
+                        <h4>Jeferson</h4>
+                        <p class="text-muted">Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img width="240" src="img/team/user-facilitador-gray.png" class="img-responsive img-circle" alt="">
+                        <h4>Paulo Gladson</h4>
+                        <p class="text-muted">Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img width="240" src="img/team/user-facilitador-gray.png" class="img-responsive img-circle" alt="">
+                        <h4>Vanderson Botelho</h4>
+                        <p class="text-muted">Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                        <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img width="240" src="img/team/user-facilitador-gray.png" class="img-responsive img-circle" alt="">
+                        <h4>Clóvis</h4>
+                        <p class="text-muted">Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img width="240" src="img/team/user-facilitador-gray.png" class="img-responsive img-circle" alt="">
+                        <h4>Cássio</h4>
+                        <p class="text-muted">Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img width="240" src="img/team/user-facilitador-gray.png" class="img-responsive img-circle" alt="">
+                        <h4>Marcelo</h4>
+                        <p class="text-muted">Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- Contact Section 
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contato</h2>
+                    <h3 class="section-subheading text-muted">Dúvidas ou sugestões? Envie-nos uma mensagem.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nome *" id="name" required data-validation-required-message="Digite seu nome.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Digite seu endereço de email.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Telefone *" id="phone" required data-validation-required-message="Digite seu telefone.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Sua Mensagem *" id="message" required data-validation-required-message="Digite sua mensagem."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/@fwkdemoiselle"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://pt-br.facebook.com/FrameworkDemoiselle/"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/demoiselle-framework/"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Signer Demoiselle</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet, venenatis nullam non tincidunt scelerisque, saepe vivamus egestas
+                                    ad maecenas purus. Molestie et semper, nullam eros do, ultrices sem vestibulum.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/logo-signer-products.png" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar Projeto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Portfolio Modal 3 
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                
+                                <h2>Rest</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet, venenatis nullam non tincidunt scelerisque, saepe vivamus egestas
+                                    ad maecenas purus. Molestie et semper, nullam eros do, ultrices sem vestibulum.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/thumbnail.png" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar Projeto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- Portfolio Modal 4
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                               
+                                <h2>CRUD</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet, venenatis nullam non tincidunt scelerisque, saepe vivamus egestas
+                                    ad maecenas purus. Molestie et semper, nullam eros do, ultrices sem vestibulum.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/thumbnail.png" alt="">
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar Projeto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- Portfolio Modal 5 
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                
+                                <h2>Configuration</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet, venenatis nullam non tincidunt scelerisque, saepe vivamus egestas
+                                    ad maecenas purus. Molestie et semper, nullam eros do, ultrices sem vestibulum.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/thumbnail.png" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar Projeto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- Portfolio Modal 6 
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                
+                                <h2>Security</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet, venenatis nullam non tincidunt scelerisque, saepe vivamus egestas
+                                    ad maecenas purus. Molestie et semper, nullam eros do, ultrices sem vestibulum.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/thumbnail.png" alt="">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar Projeto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"
+        crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-33820437-3', 'auto');
+        ga('require', 'GTM-NGGJTDK');
+        ga('send', 'pageview');
+    </script>
+
+
+</body>
+
+</html>

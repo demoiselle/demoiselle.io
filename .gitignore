@@ -1,4 +1,7 @@
 /.DS_Store
+/node_modules/
+/jee7/node_modules/
+/gerador/node_modules/
 /source/nbproject/private/
 /source/nbproject/
 /source/node_modules/

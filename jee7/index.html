@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="O Demoiselle Framework implementa o conceito de framework integrador JEE7 com AngularJS">
-    <meta name="keywords" content="JAVA,JEE7,HTML5,CSS,XML,JavaScript,AngularJS">
+    <meta name="keywords" content="JAVA,JEE7,multitenancy,websocket,CEP,ToDoList,push,HTML5,CSS,XML,JavaScript,AngularJS,SERPRO">
     <meta name="author" content="Demoiselle">
     <meta name="google-site-verification" content="L05LBDDsb8h1KoFk0qy_hi6H4sJ8IFS8XQp_PbXLpeU" />
 
@@ -33,29 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="application/ld+json">
-        {
-        "@context": "http://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-            "@id": "https://demoiselle.io/",
-            "name": "Home",
-            "image": "http://demoiselle.io/img/logo-header.png"
-            }
-        },{
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-            "@id": "https://demoiselle.io/jee7/",
-            "name": "Assinador",
-            "image": "http://demoiselle.io/jee7/img/logo-header.png"
-            }
-        }]
-        }
-    </script>
+
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -92,6 +70,29 @@
             "operatingSystem": [
             "Windows", "Linux", "OSX"
             ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+            "@id": "https://demoiselle.io/",
+            "name": "Home",
+            "image": "http://demoiselle.io/img/logo-header.png"
+            }
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+            "@id": "https://demoiselle.io/jee7/",
+            "name": "Assinador",
+            "image": "http://demoiselle.io/jee7/img/logo-header.png"
+            }
+        }]
         }
     </script>
 </head>
@@ -253,19 +254,29 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h4 class="service-heading">ToDoList</h4>
                     <p class="text-muted">Exemplo básico de uma ToDoList, apresentamos vários modelos de implementação para consumo de um mesmo
                         serviço.
                     </p>
+                    <p class="text-muted"><a href="https://github.com/demoiselle/example/tree/master/v3/todoList">Repositório git</a> </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h4 class="service-heading">CEP</h4>
                     <p class="text-muted">Neste exemplo exploramos as funcionalidades do CRUD com seus facilitadores para consulta avançada.</p>
+                    <p class="text-muted"><a href="https://github.com/demoiselle/example/tree/master/v3/cep">Repositório git</a></p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h4 class="service-heading">PUSH</h4>
                     <p class="text-muted">Servidor de push para web.</p>
+                    <p class="text-muted"><a href="https://github.com/demoiselle/example/tree/master/v3/push">Repositório git</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="service-heading">Livraria</h4>
+                    <p class="text-muted">Exemplo de multitenancy com Hibernate com a estratégia de Schemas, onde os usuários são ligados a uma
+                        livraria.
+                    </p>
+                    <p class="text-muted"><a href="https://github.com/demoiselle/example/tree/master/v3/livraria">Repositório git</a></p>
                 </div>
             </div>
         </div>
@@ -343,11 +354,16 @@
                             <br>
                             <span itemprop="name">Paulo Gladson</span>
                             <br>
+                            <a href="https://github.com/PauloGladson" itemprop="sameAs">GITHUB</a>
+                            <br>
+                            <a href="https://fb.com/PauloGladson77" itemprop="sameAs">Facebook</a>
+                            <br>
                             <span itemprop="jobTitle">Analista</span>
                             <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                                 <span itemprop="streetAddress">SERPRO</span>
                             </div>
                             <a href="mailto:paulopinheiro777@gmail.com" itemprop="email">paulopinheiro777@gmail.com</a>
+
                         </div>
                     </div>
                 </div>

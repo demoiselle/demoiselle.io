@@ -1,3 +1,6 @@
 # robotstxt.org
-
-User-agent: *
+User-Agent: *
+Disallow: 
+Allow: /jee7
+Allow: /signer
+Allow: /gerador

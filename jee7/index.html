@@ -35,6 +35,29 @@
     <![endif]-->
     <script type="application/ld+json">
         {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+            "@id": "https://demoiselle.io/",
+            "name": "Home",
+            "image": "http://demoiselle.io/img/logo-header.png"
+            }
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+            "@id": "https://demoiselle.io/jee7/",
+            "name": "Assinador",
+            "image": "http://demoiselle.io/jee7/img/logo-header.png"
+            }
+        }]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
             "@context": "http://schema.org",
             "@type": "SoftwareApplication",
             "aggregateRating": {
@@ -46,7 +69,7 @@
                 "@type": "Offer",
                 "availability": "http://schema.org/InStock",
                 "price": "0.00",
-                "priceCurrency": "USD"
+                "priceCurrency": "BRA"
             },
             "applicationCategory": "Framework",
             "applicationSuite": "Demoiselle Framework",

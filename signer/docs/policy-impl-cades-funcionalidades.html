@@ -5,19 +5,19 @@
             Criação de Assinatura Digital enviando apenas o resumo (hash) do conteúdo
         </a></span></dt><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#policy-impl-cades-funcionalidades-co-assinar">5.5. 
             Co-Assinatura em arquivo único de assinatura . 
-        </a></span></dt><dd><dl><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#d0e1184">5.5.1. 
+        </a></span></dt><dd><dl><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#d0e1144">5.5.1. 
              Com envio de conteúdo 
         </a></span></dt><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#policy-impl-cades-funcionalidades-co-assinar-hash">5.5.2. 
              Enviando apenas o Hash do conteúdo 
         </a></span></dt></dl></dd><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#policy-impl-cades-funcionalidades-validar">5.6. 
             Validação de assinatura PKCS7 sem o conteúdo anexado (dettached)
-        </a></span></dt><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#d0e1211">5.7. 
+        </a></span></dt><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#d0e1171">5.7. 
             Validação de assinatura PKCS7 com o conteúdo anexado (attached)
-        </a></span></dt><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#d0e1218">5.8. 
+        </a></span></dt><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#d0e1178">5.8. 
             Validação de assinatura PKCS7 enviando apenas o resumo (Hash) do conteúdo
-        </a></span></dt><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#d0e1225">5.9. 
+        </a></span></dt><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#d0e1185">5.9. 
             Leitura do conteúdo anexado (Attached) a uma assinatura PKCS7
-        </a></span></dt><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#d0e1232">5.10. </a></span></dt></dl></div><p>
+        </a></span></dt><dt><span class="section"><a href="policy-impl-cades-funcionalidades.html#d0e1192">5.10. </a></span></dt></dl></div><p>
         Este componente provê mecanismos de assinatura digital baseado nas normas ICP-Brasil e implementa mecanismos de assinatura digital em dois formatos: PKCS1 e
         PKCS7. A maior diferença entre esses dois mecanismos está na forma de envelopamento da assinatura digital, onde o PKCS1 não possui um formato de
         envelope, sendo o resultado da
@@ -152,7 +152,7 @@
                 Este procedimento gera o pacote PKCS7 idêntico ao pacote gerado pelo exemplo do tópico 2.2
             </p></div></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="policy-impl-cades-funcionalidades-co-assinar"/>5.5. 
             Co-Assinatura em arquivo único de assinatura . 
-        </h2></div></div></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h3 class="title"><a id="d0e1184"/>5.5.1. 
+        </h2></div></div></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h3 class="title"><a id="d0e1144"/>5.5.1. 
              Com envio de conteúdo 
         </h3></div></div></div><p>
         	Por definição, para gerar uma co-assinatura, basta que vários assinantes assinem o mesmo arquivo, gerando assim vários arquivos de assinaturas 
@@ -214,14 +214,14 @@ portanto somente os resumos com este algoritimo é que serão gerados e validado
 <!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_keyword">private</span><span class="java_plain">&nbsp;</span><span class="java_type">SignaturePolicy</span><span class="java_plain">&nbsp;signaturePolicy</span><span class="java_separator">;</span><span class="java_plain">&nbsp;</span><span class="java_operator">//</span><span class="java_plain">&nbsp;</span><span class="java_type">Politica</span><span class="java_plain">&nbsp;ICP</span><span class="java_operator">-</span><span class="java_plain">BRASIL&nbsp;usada&nbsp;para&nbsp;gera��o&nbsp;da&nbsp;assinatura</span>
 <!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="java_keyword">private</span><span class="java_plain">&nbsp;</span><span class="java_type">LinkedList</span><span class="java_operator">&lt;</span><span class="java_type">String</span><span class="java_operator">&gt;</span><span class="java_plain">&nbsp;validatorErrors&nbsp;</span><span class="java_operator">=</span><span class="java_plain">&nbsp;</span><span class="java_keyword">new</span><span class="java_plain">&nbsp;</span><span class="java_type">LinkedList</span><span class="java_operator">&lt;</span><span class="java_type">String</span><span class="java_operator">&gt;</span><span class="java_separator">();</span><span class="java_plain">&nbsp;&nbsp;</span><span class="java_operator">//</span><span class="java_plain">&nbsp;</span><span class="java_type">Lista</span><span class="java_plain">&nbsp;de&nbsp;erros&nbsp;que&nbsp;por&nbsp;ventura&nbsp;possam&nbsp;ter&nbsp;sido&nbsp;encontrados&nbsp;na&nbsp;valida��o&nbsp;da&nbsp;assinatura</span>
 <!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span></pre></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="d0e1211"/>5.7. 
+<!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span></pre></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="d0e1171"/>5.7. 
             Validação de assinatura PKCS7 com o conteúdo anexado (attached)
         </h2></div></div></div><p>
             A seguir temos um fragmento de código que demonstra a validação uma assinatura PKCS7 com o conteúdo anexado.
         </p><pre xmlns="" xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" class="JAVA"></span>
 <!--  --><br/><span class="java_type">byte</span><span class="java_separator">[]</span><span class="java_plain">&nbsp;signature&nbsp;</span><span class="java_operator">=</span><span class="java_plain">&nbsp;readContent</span><span class="java_separator">(</span><span class="java_literal">&quot;texto.pkcs7&quot;</span><span class="java_separator">);</span><span class="java_plain">&nbsp;</span><span class="java_comment">/*&nbsp;implementar&nbsp;metodo&nbsp;de&nbsp;leitura&nbsp;de&nbsp;arquivo&nbsp;*/</span>
 <!--  --><br/><span class="java_type">CAdESChecker</span><span class="java_plain">&nbsp;checker&nbsp;</span><span class="java_operator">=</span><span class="java_plain">&nbsp;</span><span class="java_keyword">new</span><span class="java_plain">&nbsp;</span><span class="java_type">CAdESChecker</span><span class="java_separator">();</span>
-<!--  --><br/><span class="java_type">List</span><span class="java_operator">&lt;</span><span class="java_type">SignatureInformations</span><span class="java_operator">&gt;</span><span class="java_plain">&nbsp;signaturesInfo&nbsp;</span><span class="java_operator">=</span><span class="java_plain">&nbsp;checker</span><span class="java_separator">.</span><span class="java_plain">checkAttachedSignature</span><span class="java_separator">(</span><span class="java_plain">signature</span><span class="java_separator">);</span></pre></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="d0e1218"/>5.8. 
+<!--  --><br/><span class="java_type">List</span><span class="java_operator">&lt;</span><span class="java_type">SignatureInformations</span><span class="java_operator">&gt;</span><span class="java_plain">&nbsp;signaturesInfo&nbsp;</span><span class="java_operator">=</span><span class="java_plain">&nbsp;checker</span><span class="java_separator">.</span><span class="java_plain">checkAttachedSignature</span><span class="java_separator">(</span><span class="java_plain">signature</span><span class="java_separator">);</span></pre></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="d0e1178"/>5.8. 
             Validação de assinatura PKCS7 enviando apenas o resumo (Hash) do conteúdo
         </h2></div></div></div><p>
         	Da mesma forma que possibilitamos a criação da assinatura enviando o resumo (hash) calculado do conteúdo, podemos também fazer a validação da mesma forma.
@@ -237,7 +237,7 @@ portanto somente os resumos com este algoritimo é que serão gerados e validado
 <!--  --><br/><span class="java_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.getInstance(DigestAlgorithmEnum.SHA_256.getAlgorithm());</span>
 <!--  --><br/><span class="java_plain">byte[]&nbsp;hash&nbsp;=&nbsp;md.digest(content);</span>
 <!--  --><br/><span class="java_plain">List&lt;SignatureInformations&gt;&nbsp;signaturesInfo&nbsp;=&nbsp;checker.checkSignatureByHash(SignerAlgorithmEnum.SHA256withRSA.getOIDAlgorithmHash(),&nbsp;hash,&nbsp;signature);</span>
-</pre></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="d0e1225"/>5.9. 
+</pre></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="d0e1185"/>5.9. 
             Leitura do conteúdo anexado (Attached) a uma assinatura PKCS7
         </h2></div></div></div><p>
             A seguir temos um fragmento de código que demonstra a extração (recuperação) do conteúdo de um arquivo anexado a uma assinatura PKCS7.

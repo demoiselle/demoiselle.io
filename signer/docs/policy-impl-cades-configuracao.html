@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory">Capítulo 4. Configuração do Demoiselle Signer</title><link rel="stylesheet" href="css/demoiselleframework.css" type="text/css"/><meta xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" name="generator" content="DocBook XSL Stylesheets V1.74.0"/><link rel="home" href="index.html" title="Demoiselle Signer"/><link rel="up" href="policy-impl-cades-master.html" title="Parte II. Implementação das Políticas CAdES"/><link rel="prev" href="policy-impl-cades-master.html" title="Parte II. Implementação das Políticas CAdES"/><link rel="next" href="policy-impl-cades-funcionalidades.html" title="Capítulo 5. Funcionalidades"/><meta xmlns="" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p id="title"><a href="http://www.frameworkdemoiselle.gov.br" class="site_href"><strong>FrameworkDemoiselle.gov.br</strong></a><a href="http://www.frameworkdemoiselle.gov.br" class="doc_href"><strong>Community Documentation</strong></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="policy-impl-cades-master.html"><strong>Anterior</strong></a></li><li class="next"><a accesskey="n" href="policy-impl-cades-funcionalidades.html"><strong>Próxima</strong></a></li></ul><div class="chapter" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="policy-impl-cades-configuracao"/>Capítulo 4. Configuração do Demoiselle Signer</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="policy-impl-cades-configuracao.html#d0e1003">4.1. Instalação do componente</a></span></dt></dl></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="d0e1003"/>4.1. Instalação do componente</h2></div></div></div><p>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory">Capítulo 4. Configuração do Demoiselle Signer</title><link rel="stylesheet" href="css/demoiselleframework.css" type="text/css"/><meta xmlns:rf="java:org.jboss.highlight.XhtmlRendererFactory" name="generator" content="DocBook XSL Stylesheets V1.74.0"/><link rel="home" href="index.html" title="Demoiselle Signer"/><link rel="up" href="policy-impl-cades-master.html" title="Parte II. Implementação das Políticas CAdES"/><link rel="prev" href="policy-impl-cades-master.html" title="Parte II. Implementação das Políticas CAdES"/><link rel="next" href="policy-impl-cades-funcionalidades.html" title="Capítulo 5. Funcionalidades"/><meta xmlns="" http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body><p id="title"><a href="http://www.frameworkdemoiselle.gov.br" class="site_href"><strong>FrameworkDemoiselle.gov.br</strong></a><a href="http://www.frameworkdemoiselle.gov.br" class="doc_href"><strong>Community Documentation</strong></a></p><ul class="docnav"><li class="previous"><a accesskey="p" href="policy-impl-cades-master.html"><strong>Anterior</strong></a></li><li class="next"><a accesskey="n" href="policy-impl-cades-funcionalidades.html"><strong>Próxima</strong></a></li></ul><div class="chapter" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="policy-impl-cades-configuracao"/>Capítulo 4. Configuração do Demoiselle Signer</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="policy-impl-cades-configuracao.html#d0e963">4.1. Instalação do componente</a></span></dt></dl></div><div class="section" lang="pt-BR"><div class="titlepage"><div><div><h2 class="title"><a id="d0e963"/>4.1. Instalação do componente</h2></div></div></div><p>
             Para utilizar o componente <span class="emphasis"><em>policy-impl-cades</em></span> num projeto Java, 
             basta adicionar a sua dependência no arquivo <code class="filename"> pom.xml </code>, conforme o seu gerenciador de projetos:
         </p><p> </p><div class="itemizedlist"><ul><li><p><a class="ulink" href="https://maven.apache.org/">Apache-Maven</a></p><p>
@@ -9,26 +9,26 @@
         		&lt;dependency&gt;
 				&lt;groupId&gt;org.demoiselle.signer&lt;/groupId&gt;
 				&lt;artifactId&gt;policy-impl-cades&lt;/artifactId&gt;
-				&lt;version&gt;3.2.5&lt;/version&gt;
+				&lt;version&gt;3.2.6&lt;/version&gt;
 			&lt;/dependency&gt;
 			</pre><p>
         		 </p></li><li><p><a class="ulink" href="https://buildr.apache.org/">Apache Buildr</a></p><p>
-        		 	</p><pre class="programlisting">'org.demoiselle.signer:policy-impl-cades:jar:3.2.5'
+        		 	</p><pre class="programlisting">'org.demoiselle.signer:policy-impl-cades:jar:3.2.6'
 			</pre><p>
         		 </p></li><li><p><a class="ulink" href="http://ant.apache.org/ivy/">Apache Ivy</a></p><p>
-        		 	</p><pre class="programlisting">&lt;dependency org="org.demoiselle.signer" name="policy-impl-cades" rev="3.2.5" /&gt;
+        		 	</p><pre class="programlisting">&lt;dependency org="org.demoiselle.signer" name="policy-impl-cades" rev="3.2.6" /&gt;
 			</pre><p>
         		 </p></li><li><p><a class="ulink" href="http://docs.groovy-lang.org/latest/html/documentation/grape.html">Groovy Grape</a></p><p>
-        		 	</p><pre class="programlisting">@Grapes(@Grab(group='org.demoiselle.signer', module='policy-impl-cades', version='3.2.5'))
+        		 	</p><pre class="programlisting">@Grapes(@Grab(group='org.demoiselle.signer', module='policy-impl-cades', version='3.2.6'))
 			</pre><p>
         		 </p></li><li><p><a class="ulink" href="https://github.com/grails/grails-gradle-plugin">Gradle/Grails</a></p><p>
-        		 	</p><pre class="programlisting">&lt;dependency org="org.demoiselle.signer" name="policy-impl-cades" rev="3.2.5" /&gt;
+        		 	</p><pre class="programlisting">&lt;dependency org="org.demoiselle.signer" name="policy-impl-cades" rev="3.2.6" /&gt;
 			</pre><p>
         		 </p></li><li><p><a class="ulink" href="http://www.scala-sbt.org/">Scala SBT</a></p><p>
-        		 	</p><pre class="programlisting">libraryDependencies += "org.demoiselle.signer" % "policy-impl-cades" % "3.2.5"
+        		 	</p><pre class="programlisting">libraryDependencies += "org.demoiselle.signer" % "policy-impl-cades" % "3.2.6"
 			</pre><p>
         		 </p></li><li><p><a class="ulink" href="https://leiningen.org/">Leiningen</a></p><p>
-        		 	</p><pre class="programlisting">&lt;[org.demoiselle.signer/policy-impl-cades "3.2.5"]
+        		 	</p><pre class="programlisting">&lt;[org.demoiselle.signer/policy-impl-cades "3.2.6"]
 			</pre><p>
         		 </p></li></ul></div><p>
         </p><p> Caso não esteja utilizando nenhum outro tipo de gerenciador (estava morando numa caverna nos últimos dez anos), pode baixar o .jar do repositório:
